@@ -14,9 +14,9 @@ st.write("Enter order details:")
 purchase_dow = st.slider("Day of Week (0=Mon)", 0, 6, 1)
 purchase_month = st.slider("Month", 1, 12, 1)
 year = st.number_input("Year", value=2026)
-product_size_cm3 = st.number_input("Product Size (cm³)", value=5000)
-product_weight_g = st.number_input("Weight (g)", value=1000)
-distance_km = st.number_input("Distance (km)", value=10)
+product_size_cm3 = st.number_input("Product Size (cm³)", value=5000.0)
+product_weight_g = st.number_input("Weight (g)", value=1000.0)
+distance_km = st.number_input("Distance (km)", value=10.0)
 
 if st.button("Predict"):
     input_df = pd.DataFrame([[
